@@ -1,7 +1,7 @@
 # Updated Animation Starter Code
 
 from tkinter import *
-import OpenCV-Face-Recognition-Python.py
+import facerecognition
 ####################################
 # Color palette
 darkerRed  = "#C14242"
