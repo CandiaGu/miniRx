@@ -1,0 +1,25 @@
+<html>
+<head>
+<script type="text/javascript"
+    src="https://cdn.rawgit.com/brython-dev/brython/3.4.0/www/src/brython.js">
+</script>
+<script type="text/javascript"
+    src="https://cdn.rawgit.com/brython-dev/brython/3.4.0/www/src/brython_stdlib.js">
+</script>
+</head>
+<body onload="brython()">
+<script type="text/python">
+from browser import document, alert
+import cv2
+
+# bind event 'click' on button to function echo
+@document["mybutton"].bind("click")
+def echo(ev):
+    alert(document["zone"].value)
+print(4)
+
+</script>
+<input id="zone">
+<button id="mybutton">click !</button>
+</body>
+</html>
